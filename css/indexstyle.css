@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
 
 }
 
@@ -208,6 +208,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .countdown div h1 {
     font-size: 5em;
+}
+
+.streambutton {
+    margin-bottom: 50px;
+    border-style: none;
+    padding: 8px 20px;
+    background-color: white;
+    font-weight: 200;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.streambutton:hover {
+    background-color: lightgray;
+    border-radius: 10px;
 }
 
 .sponsorholder {
