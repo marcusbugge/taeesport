@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(/pictures/bakgrunn.png);
+    background-image: url(../pictures/bakgrunn.png);
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
 }
