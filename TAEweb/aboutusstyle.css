@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bakgrunn.png);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding-top: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.links {
+    color: lightgray;
+    margin-right: 70px;
+    text-decoration: none;
+
+}
+
+.logo {
+   width: 80px;
+    margin-top: -11px;
+    margin-top: -11px;
+    margin-right: 50px;
+}
+.box1{
+    position: fixed;
+    margin-left: auto;
+    margin-top: 200px;
+
+}
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    list-style: red;
+    margin-left: 40%;
+    border-color: red;
+}
+ .jung img, .mid img, .adc img, .supp img {
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.rosterdivs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.rosterdivs div{
+    margin: 50px 20px 50px 20px;
+    height: 400px;
+    width: 250px;
+    background-color: lightgray;
+}

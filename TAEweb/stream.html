@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TAE Esport - Stolte tradisjoner, ny historie</title>
+    <link rel="stylesheet" href="streamstyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script src="rellax.min.js"></script>
+
+</head>
+    <body>
+        <div id="tagnav" class="navbar">
+                <a href="index.html" class="links">Home</a>
+                <a href="#tagnav"><img class="logo" src="logo.png"></a>
+        </div>
+
+    <div class="streamtwitch">
+       <div id="twitch-embed"></div>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            <script type="text/javascript">
+              new Twitch.Embed("twitch-embed", {
+                width: 1280,
+                height: 720,
+                channel: "taeesport",
+                parent: ["embed.example.com", "othersite.example.com"]
+              });
+            </script>
+        </div>
+
+    </body>
+</html>
