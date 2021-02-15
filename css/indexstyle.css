@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .backgrounddiv {
-    background-image: url("/TAEweb/pictures/bakgrunn.png");
+    background-image: url("/pictures/bakgrunn.png");
     width: 100%;
     height: 900px;
     text-align: center;
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .countdowncontainer {
     background-color: #2d2d2d;
-    background-image: url(/TAEweb/pictures/bakgrunntimer1.png);
+    background-image: url(/pictures/bakgrunntimer1.png);
 
 }
 
