@@ -4,14 +4,20 @@
 }
 
 body {
-    background-color: #2d2d2d;
+    background-image: url(/TAEweb/pictures/gameday.png);
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
+    display: flex;
+    justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+}
+
+@media only screen and (max-width: 1350px) {
+
 }
 
 .navbar {
@@ -33,7 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-   width: 80px;
+    width: 80px;
     margin-top: -11px;
     margin-right: 50px;
+}
+
+.streamtwitch {
+    margin-top: 120px;
 }

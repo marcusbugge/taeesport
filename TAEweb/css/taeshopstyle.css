@@ -4,20 +4,14 @@
 }
 
 body {
-    background-image: url(gameday.png);
+    background-color: #2d2d2d;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
-    display: flex;
-    justify-content: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-}
-
-@media only screen and (max-width: 1350px) {
-
 }
 
 .navbar {
@@ -30,6 +24,30 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
+.navbar a {
+    margin-left: 100px;
+}
+
+/*
+
+
+.shophomebutton {
+    border-style: none;
+    color: white;
+    background-color: #2d2d2d;
+    padding: 8px 25px;
+    border-style: solid;
+    border-color: white;
+    transition: .5s;
+}
+
+.shophomebutton:hover {
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+*/
+
+
 
 .links {
     color: lightgray;
@@ -39,11 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    width: 80px;
+   width: 80px;
     margin-top: -11px;
     margin-right: 50px;
-}
-
-.streamtwitch {
-    margin-top: 120px;
 }
