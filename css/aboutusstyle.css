@@ -12,6 +12,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
+.tekst0 {
+    font-weight: 800;
+    font-size: 80px;
+}
+.tekst1{
+    font-weight: 800;
+    font-size: 80px;
+    color:#9d5c0c;
+    text-align: center;
+}
 
 .navbar {
     display: flex;
@@ -21,9 +31,8 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     width: 100%;
     z-index: 1;
+
 }
-
-
 .links {
     color: lightgray;
     margin-right: 70px;
@@ -38,29 +47,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 50px;
 }
 
- .jung img, .mid img, .adc img, .supp img {
-    max-height: 100%;
-    max-width: 100%;
-    opacity: 1;
-    transition: .5s;
+.box3{
+    background-color: red;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
 }
-
 
 .rosterdivs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 200px;
 }
-
-.rosterdivs div{
-    margin: 50px 20px 50px 20px;
-    height: 400px;
-    width: 250px;
-    background-color: lightgray;
-}
-.box3{
-    padding-top: 200px;
-    display: flex;
-    justify-content: center;
+.break{
+    width: 100%;
+    height: 40px;
 }
