@@ -4,7 +4,6 @@
 }
 
 body {
-    background-image: url(/pictures/bakgrunn.png);
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
 }
@@ -38,21 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -11px;
     margin-right: 50px;
 }
-.box1{
-    position: fixed;
-    margin-left: auto;
-    margin-top: 200px;
 
-}
-.box2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px;
-    list-style: red;
-    margin-left: 40%;
-    border-color: red;
-}
  .jung img, .mid img, .adc img, .supp img {
     max-height: 100%;
     max-width: 100%;
@@ -73,4 +58,9 @@ h1, h2, h3, h4, h5, h6 {
     height: 400px;
     width: 250px;
     background-color: lightgray;
+}
+.box3{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
 }
