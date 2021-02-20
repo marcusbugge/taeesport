@@ -7,11 +7,22 @@
 body {
  font-family: 'Work Sans', sans-serif;
  font-weight: 300;
-}
-
-@media only screen and (max-width: 1350px) {
 
 }
+
+
+body::after {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0px 0 100px rgba(0, 0, 0, 1);
+  z-index: 100;
+}
+
+
 
 h1, h2, h3, h4, h5, h6 {
  font-family: 'Montserrat', sans-serif;
@@ -25,14 +36,81 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+/*  --------
+    NAVBAR-LITEN
+    --------    */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+    }
+}
+
 .navbar {
     display: flex;
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-right: 50px;
     padding-top: 40px;
     position: fixed;
     width: 100%;
     z-index:1;
+}
+
+.navbar img {
+    cursor: pointer;
+}
+
+.navicon {
+
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    margin-right: 50px;
+
 }
 
 
@@ -48,15 +126,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-   width: 80px;
-    margin-top: -11px;
+    width: 150px;
     margin-right: 50px;
+    padding-top: 200px;
 }
 
 .backgrounddiv h1 {
+    margin-top: 50px;
     color: white;
     font-size: 7em;
-    padding-top: 310px;
+
 }
 
 .slagord {
@@ -96,8 +175,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.top img:hover {
+.toptes:hover {
     opacity: 0.1;
+    border-radius: 20px;
 }
 
 .opgg img:hover {
@@ -113,6 +193,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.gragas {
+    position: absolute;
+    left: 70%
+}
+
 .top a button {
     background-color: rgb(202,149,11);
     border-style: none;
@@ -122,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.rostercontainer h1{
+.spillheader {
     background: rgb(202,149,11);
     background: linear-gradient(90deg, rgba(202,149,11,1) 2%, rgba(157,92,12,1) 100%);
     -webkit-background-clip: text;
@@ -166,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .countdowncontainer {
     background-color: #2d2d2d;
-    background-image: url(../pictures/bakgrunntimer1.png);
+    background-image: url(../pictures/bakgrunn.png);
 
 }
 
@@ -211,18 +296,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .streambutton {
-    margin-bottom: 50px;
-    border-style: none;
-    padding: 8px 20px;
-    background-color: white;
-    font-weight: 200;
-    border-radius: 20px;
-    transition: .2s;
-}
 
+    margin-bottom: 50px;
+    width: 100px;
+    height: 30px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
 .streambutton:hover {
-    background-color: lightgray;
-    border-radius: 10px;
+    background-color: rgba(202,149,11,1);
+    color: white;
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 20px rgba(202,149,11,0.4);
 }
 
 .sponsorholder {
@@ -236,6 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 .sponsorholder h1 {
     font-size: 4em;
     color: #2d2d2d;
+
 }
 
 .sponsorholder div {
@@ -258,25 +353,165 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     padding: 8px 18px;
     border-radius: 20px;
+    position: fixed;
+
 }
 
-.testtob {
-    height: 1000px;
+/*  --------
+    VALORANT
+    --------    */
+
+.soknadvalorantholder {
+    background-image: radial-gradient(#d3d3d3 2px, transparent 1px);
+    background-size: 100px 100px;
+    padding-bottom: 400px;
+    padding-top: 100px;
+}
+
+.valorantxtae {
+    width: 300px;
+    margin-left: calc(50% - 150px);
+    margin-bottom: 50px;
+}
+
+.h1valorant {
+    font-size: 4em;
+    width: 600px;
+    color: #2d2d2d;
+}
+
+.valoranttekstholder {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.valoranttekstholder {
+
+}
+
+.h1holder {
+    padding: 0;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.pholder {
+    width: 400px;
+    line-height: 25px;
+    margin-top: 30px;
+
+}
+
+.pholder button {
+    margin-top: 50px;
+    width: 140px;
+    height: 45px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+
+}
+.søkher:hover {
+    background-color: rgba(202,149,11,1);
+    color: white;
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 20px rgba(202,149,11,0.4);
+}
+
+.valorantstripe {
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    margin-left: calc(50% - 75px);
     margin-top: 200px;
 }
+
+@media screen and (max-width: 1000px) {
+
+    .links {
+        display: none;
+    }
+    .valoranttekstholder {
+        justify-content: flex-start;
+        margin-left: 100px;
+    }
+
+    .soknadvalorantholder p{
+        font-size: 30px;
+        line-height: 40px
+    }
+
+    .pholder button {
+        width: 300px;
+        height: 90px;
+        font-size: 1.5em;
+    }
+
+    .navicon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: -5px;
+        margin-right: 20px;
+    }
+}
+
+
+
+/*  --------
+    BOTTOMBAR
+    --------    */
 
 .bottombar {
     background-color: #2d2d2d;
     color: white;
-    padding: 100px 50px 30px 100px;
+    padding: 50px 50px 30px 100px;
+    text-align: center;
+    letter-spacing: .6px;
 }
 
-.bottombar img {
-    width: 50px;
-    margin-bottom: 20px;
+.twitter {
+    width: 60px;
 }
+
+.mediaicons {
+    margin-left: -20px;
+}
+
+.twitch {
+    width: 35px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.discord {
+    width: 40px;
+    margin-bottom: 16px;
+}
+
+.mediaicons {
+    text-align: center;
+}
+
+.soscialmediaholder {
+    margin-bottom: 200px;
+}
+
+.taelogo {
+    width: 80px;
+    padding-bottom: 20px;
+}
+
+
 
 
 
