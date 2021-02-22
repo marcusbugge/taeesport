@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*  --------
-    NAVBAR-LITEN
+    NAVBAR
     --------    */
 
 .overlay {
@@ -127,7 +127,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
     width: 150px;
-    margin-right: 50px;
     padding-top: 200px;
 }
 
@@ -154,6 +153,10 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/*  --------
+    ROSTER LEAGUE
+    --------    */
+
 .rostercontainer {
     margin-top: 100px;
 
@@ -170,18 +173,8 @@ h1, h2, h3, h4, h5, h6 {
 .top img, .jung img, .mid img, .adc img, .supp img {
     max-height: 100%;
     max-width: 100%;
-    opacity: 1;
-    transition: .5s;
-}
-
-
-.toptes:hover {
-    opacity: 0.1;
-    border-radius: 20px;
-}
-
-.opgg img:hover {
-    opacity: 1;
+    color: gray;
+box-shadow: 0 0 10px 1px;
 }
 
 .top a {
@@ -191,11 +184,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: calc(50% + 50px);
     opacity: 0;
 
-}
-
-.gragas {
-    position: absolute;
-    left: 70%
 }
 
 .top a button {
@@ -222,11 +210,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
 }
 
-.rosterdivs div{
+.top, .jung, .mid, .adc, .supp {
     margin: 50px 20px 50px 20px;
     height: 400px;
     width: 250px;
     background-color: lightgray;
+}
+
+
+.covercard {
+    background-color: black;
+    width: 250px;
+    height: 400px;
+    opacity: 0;
+    transform: translateY(400px);
+    position: absolute;
+    transition: .2s;
+}
+
+.top:hover .covercard {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .staffdivs {
@@ -246,6 +250,8 @@ h1, h2, h3, h4, h5, h6 {
 .staffdivs div img {
     max-width: 100%;
     max-height: 100%;
+    color: gray;
+box-shadow: 0 0 10px 1px;
 }
 
 
@@ -260,6 +266,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: gray;
+box-shadow: 0 0 10px 1px;
 }
 
 .motstanderheader h1{
@@ -324,7 +332,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 300px;
-    margin-top: 300px;
+
 }
 
 .sponsorholder h1 {
@@ -347,23 +355,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sponsorholder button {
-    margin-top: 50px;
-    border-style: none;
-    background: linear-gradient(90deg, rgba(202,149,11,1) 2%, rgba(157,92,12,1) 100%);
-    color: white;
-    padding: 8px 18px;
-    border-radius: 20px;
-    position: fixed;
+     margin-top: 50px;
+    width: 140px;
+    height: 45px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
 
+.sponsorholder button:hover {
+    background-color: rgba(202,149,11,1);
+    color: white;
+    transform: translateY(-7px);
+    box-shadow: 0px 15px 20px rgba(202,149,11,0.4);
 }
 
 /*  --------
     VALORANT
     --------    */
 
-.soknadvalorantholder {
-    background-image: radial-gradient(#d3d3d3 2px, transparent 1px);
+.valorant {
+     background-image: radial-gradient(#d3d3d3 2px, transparent 1px);
     background-size: 100px 100px;
+}
+
+.soknadvalorantholder {
+
     padding-bottom: 400px;
     padding-top: 100px;
 }
@@ -467,12 +492,82 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
 /*  --------
     BOTTOMBAR
     --------    */
 
-.bottombar {
+/*  --------
+    GAMES
+    --------    */
+
+.gamesholder {
+    height: 140px;
+    background-color: #Efefef;
+    color: lightgray;
+    box-shadow: 0 0 10px 5px;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.game1, .game2, .game3, .game4 {
+    width: 150px;
+    height: 100px;
     background-color: #2d2d2d;
+    margin: 0 3px
+}
+
+.game1 {
+    background-image: url(/pictures/valorant.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.game2 {
+    background-image: url(/pictures/league.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.game3 {
+    background-image: url(/pictures/Osu.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.gameoverlay {
+    width: 150px;
+    height: 100px;
+    background-color: #2d2d2d;
+    opacity: .5;
+    position: absolute;
+    transition: .2s;
+
+
+}
+
+
+.game1:hover .gameoverlay, .game2:hover .gameoverlay, .game3:hover .gameoverlay {
+    opacity: 0;
+}
+
+.game1:hover, .game2:hover, .game3:hover {
+    transform: scale(1.02);
+}
+
+
+/*  --------
+    FOOTER
+    --------    */
+
+.bottombar {
+    background-image: url(/pictures/bakgrunntimer1.png);
+    background-size: 100%;
     color: white;
     padding: 50px 50px 30px 100px;
     text-align: center;
@@ -509,6 +604,23 @@ h1, h2, h3, h4, h5, h6 {
 .taelogo {
     width: 80px;
     padding-bottom: 20px;
+}
+
+  @media only screen and (max-device-width: 500px) {
+      .gamesholder {
+          height: 300px;
+      }
+
+      .gameoverlay {
+        height: 200px;
+        width: 250px;
+      }
+
+      .game1, .game2, .game3, .game4 {
+          width: 250px;
+          height: 200px;
+          margin: 0px 10px;
+      }
 }
 
 
