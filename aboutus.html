@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>TAE Esport - About us</title>
     <link rel="stylesheet" href="css/aboutusstyle.css">
@@ -9,37 +10,43 @@
     <script src="js/rellax.min.js"></script>
 
 </head>
-    <body>
+
+<body>
+    <div id="tagnav" class="navbar">
         <div id="tagnav" class="navbar">
-                <div id="tagnav" class="navbar">
-                    <span onclick="openNav()">
-                        <a>
-                            <img class="navicon" src="pictures/navbaricon.png">
-                        </a>
-                    </span>
-                </div>
+            <span onclick="openNav()">
+                <a>
+                    <img class="navicon" src="pictures/navbaricon.png">
+                </a>
+            </span>
         </div>
+    </div>
 
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="index.html" class="links">Home</a>
-                <a href="stream.html" class="links">Stream</a>
-                <a href="taeshop.html" class="links">Merch</a>
-                <a href="aboutus.html" class="links">About us</a>
-            </div>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html" class="links">Home</a>
+            <a href="stream.html" class="links">Stream</a>
+            <a href="taeshop.html" class="links">Merch</a>
+            <a href="aboutus.html" class="links">About us</a>
         </div>
+    </div>
 
-        <div class="underdev"><h1>Under utvikling</h1><div class="stripe"></div></div>
+    <div class="underdev">
+        <h1>Under utvikling</h1>
+        <div class="stripe"></div>
+    </div>
 
-              <script>
-            function openNav() {
-              document.getElementById("myNav").style.width = "100%";
-            }
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-            function closeNav() {
-              document.getElementById("myNav").style.width = "0%";
-            }
-</script>
-    </body>
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+
+    </script>
+</body>
+
 </html>

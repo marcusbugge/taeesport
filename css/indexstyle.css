@@ -1,36 +1,40 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 body {
- font-family: 'Work Sans', sans-serif;
- font-weight: 300;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
 
 }
 
 
 body::after {
-  content: "";
-  position: fixed;
-  top: -10px;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  box-shadow: 0px 0 100px rgba(0, 0, 0, 1);
-  z-index: 100;
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0px 0 100px rgba(0, 0, 0, 1);
+    z-index: 100;
 }
 
 
 
-h1, h2, h3, h4, h5, h6 {
- font-family: 'Montserrat', sans-serif;
- font-weight: 900;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 
 .backgrounddiv {
-    background-image: url("../pictures/bakgrunn.png");
+    background-image: url("../pictures/gameday.png");
     width: 100%;
     height: 900px;
     text-align: center;
@@ -41,52 +45,56 @@ h1, h2, h3, h4, h5, h6 {
     --------    */
 
 .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
 }
 
@@ -97,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 40px;
     position: fixed;
     width: 100%;
-    z-index:1;
+    z-index: 1;
 }
 
 .navbar img {
@@ -114,17 +122,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.links {
-    color: gray;
-    margin-right: 70px;
-    text-decoration: none;
-
-}
-
-.links:hover {
-    color: #9d5c0c;
-}
-
 .logo {
     width: 150px;
     padding-top: 200px;
@@ -138,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slagord {
-        margin-top: 200px;
+    margin-top: 200px;
     font-weight: 600;
     font-size: 1em;
     color: white;
@@ -170,11 +167,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 10px;
 }
 
-.top img, .jung img, .mid img, .adc img, .supp img {
+.top img,
+.jung img,
+.mid img,
+.adc img,
+.supp img {
     max-height: 100%;
     max-width: 100%;
     color: gray;
-box-shadow: 0 0 10px 1px;
+    box-shadow: 0 0 10px 1px;
 }
 
 .top a {
@@ -187,7 +188,7 @@ box-shadow: 0 0 10px 1px;
 }
 
 .top a button {
-    background-color: rgb(202,149,11);
+    background-color: rgb(202, 149, 11);
     border-style: none;
     padding: 8px 18px;
     border-radius: 20px;
@@ -196,8 +197,8 @@ box-shadow: 0 0 10px 1px;
 
 
 .spillheader {
-    background: rgb(202,149,11);
-    background: linear-gradient(90deg, rgba(202,149,11,1) 2%, rgba(157,92,12,1) 100%);
+    background: rgb(202, 149, 11);
+    background: linear-gradient(90deg, rgba(202, 149, 11, 1) 2%, rgba(157, 92, 12, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 80px;
@@ -210,7 +211,11 @@ box-shadow: 0 0 10px 1px;
     margin-top: 50px;
 }
 
-.top, .jung, .mid, .adc, .supp {
+.top,
+.jung,
+.mid,
+.adc,
+.supp {
     margin: 50px 20px 50px 20px;
     height: 400px;
     width: 250px;
@@ -240,7 +245,7 @@ box-shadow: 0 0 10px 1px;
     margin-top: 0px;
 }
 
-.staffdivs div{
+.staffdivs div {
     margin: 50px 20px 150px 20px;
     height: 400px;
     width: 250px;
@@ -251,7 +256,7 @@ box-shadow: 0 0 10px 1px;
     max-width: 100%;
     max-height: 100%;
     color: gray;
-box-shadow: 0 0 10px 1px;
+    box-shadow: 0 0 10px 1px;
 }
 
 
@@ -267,14 +272,14 @@ box-shadow: 0 0 10px 1px;
     flex-direction: column;
     align-items: center;
     color: gray;
-box-shadow: 0 0 10px 1px;
+    box-shadow: 0 0 10px 1px;
 }
 
-.motstanderheader h1{
+.motstanderheader h1 {
     font-size: 3em;
     margin-top: 50px;
-    background: rgb(202,149,11);
-    background: linear-gradient(90deg, rgba(202,149,11,1) 2%, rgba(157,92,12,1) 100%);
+    background: rgb(202, 149, 11);
+    background: linear-gradient(90deg, rgba(202, 149, 11, 1) 2%, rgba(157, 92, 12, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -320,11 +325,12 @@ box-shadow: 0 0 10px 1px;
     cursor: pointer;
     outline: none;
 }
+
 .streambutton:hover {
-    background-color: rgba(202,149,11,1);
+    background-color: rgba(202, 149, 11, 1);
     color: white;
     transform: translateY(-7px);
-    box-shadow: 0px 15px 20px rgba(202,149,11,0.4);
+    box-shadow: 0px 15px 20px rgba(202, 149, 11, 0.4);
 }
 
 .sponsorholder {
@@ -355,7 +361,7 @@ box-shadow: 0 0 10px 1px;
 }
 
 .sponsorholder button {
-     margin-top: 50px;
+    margin-top: 50px;
     width: 140px;
     height: 45px;
     font-size: 11px;
@@ -372,10 +378,10 @@ box-shadow: 0 0 10px 1px;
 }
 
 .sponsorholder button:hover {
-    background-color: rgba(202,149,11,1);
+    background-color: rgba(202, 149, 11, 1);
     color: white;
     transform: translateY(-7px);
-    box-shadow: 0px 15px 20px rgba(202,149,11,0.4);
+    box-shadow: 0px 15px 20px rgba(202, 149, 11, 0.4);
 }
 
 /*  --------
@@ -383,7 +389,7 @@ box-shadow: 0 0 10px 1px;
     --------    */
 
 .valorant {
-     background-image: radial-gradient(#d3d3d3 2px, transparent 1px);
+    background-image: radial-gradient(#d3d3d3 2px, transparent 1px);
     background-size: 100px 100px;
 }
 
@@ -411,9 +417,7 @@ box-shadow: 0 0 10px 1px;
     justify-content: center;
 }
 
-.valoranttekstholder {
-
-}
+.valoranttekstholder {}
 
 .h1holder {
     padding: 0;
@@ -445,11 +449,12 @@ box-shadow: 0 0 10px 1px;
     outline: none;
 
 }
+
 .søkher:hover {
-    background-color: rgba(202,149,11,1);
+    background-color: rgba(202, 149, 11, 1);
     color: white;
     transform: translateY(-7px);
-    box-shadow: 0px 15px 20px rgba(202,149,11,0.4);
+    box-shadow: 0px 15px 20px rgba(202, 149, 11, 0.4);
 }
 
 .valorantstripe {
@@ -465,12 +470,13 @@ box-shadow: 0 0 10px 1px;
     .links {
         display: none;
     }
+
     .valoranttekstholder {
         justify-content: flex-start;
         margin-left: 100px;
     }
 
-    .soknadvalorantholder p{
+    .soknadvalorantholder p {
         font-size: 30px;
         line-height: 40px
     }
@@ -516,7 +522,10 @@ box-shadow: 0 0 10px 1px;
     position: relative;
 }
 
-.game1, .game2, .game3, .game4 {
+.game1,
+.game2,
+.game3,
+.game4 {
     width: 150px;
     height: 100px;
     background-color: #2d2d2d;
@@ -528,11 +537,13 @@ box-shadow: 0 0 10px 1px;
     background-position: center;
     background-size: cover;
 }
+
 .game2 {
     background-image: url(/pictures/league.jpg);
     background-position: center;
     background-size: cover;
 }
+
 .game3 {
     background-image: url(/pictures/Osu.jpg);
     background-position: center;
@@ -552,11 +563,15 @@ box-shadow: 0 0 10px 1px;
 }
 
 
-.game1:hover .gameoverlay, .game2:hover .gameoverlay, .game3:hover .gameoverlay {
+.game1:hover .gameoverlay,
+.game2:hover .gameoverlay,
+.game3:hover .gameoverlay {
     opacity: 0;
 }
 
-.game1:hover, .game2:hover, .game3:hover {
+.game1:hover,
+.game2:hover,
+.game3:hover {
     transform: scale(1.02);
 }
 
@@ -606,26 +621,22 @@ box-shadow: 0 0 10px 1px;
     padding-bottom: 20px;
 }
 
-  @media only screen and (max-device-width: 500px) {
-      .gamesholder {
-          height: 300px;
-      }
+@media only screen and (max-device-width: 500px) {
+    .gamesholder {
+        height: 300px;
+    }
 
-      .gameoverlay {
+    .gameoverlay {
         height: 200px;
         width: 250px;
-      }
+    }
 
-      .game1, .game2, .game3, .game4 {
-          width: 250px;
-          height: 200px;
-          margin: 0px 10px;
-      }
+    .game1,
+    .game2,
+    .game3,
+    .game4 {
+        width: 250px;
+        height: 200px;
+        margin: 0px 10px;
+    }
 }
-
-
-
-
-
-
-
